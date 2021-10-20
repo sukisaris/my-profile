@@ -1,0 +1,124 @@
+@import '../colors.css';
+
+.container {
+  background-color: var(--gray-8);
+  min-height: 100vh;
+}
+
+.container > .main {
+  margin: 0 25%;
+  min-height: 100vh;
+  box-shadow: 20px 20px 60px #2c3136, -20px -20px 60px #3c434a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.me {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ctme {
+  background-color: var(--gray-5);
+  padding: 10px;
+  box-shadow: 5px 5px var(--gray-3);
+  color: var(--gray-1);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.ctme > section {
+  display: flex;
+  flex-direction: column;
+}
+
+.ts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--gray-7);
+  padding: 20px;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+}
+
+.ts > .foto {
+  max-height: 150px;
+  max-width: 150px;
+  border: 5px solid var(--gray-2);
+}
+
+.personal > section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.personal > section > .icon {
+  color: var(--gray-3);
+  font-size: 20px;
+}
+
+.personal > section > section {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.personal > section > section > span:first-child {
+  color: var(--gray-5);
+  font-weight: bold;
+}
+
+.personal > section > section > span:last-child {
+  color: var(--gray-3);
+}
+
+.sm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sm > section {
+  background-color: var(--gray-9);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.sm > section > span {
+  color: var(--gray-3);
+}
+
+.sm > section > .icon {
+  color: var(--gray-3);
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container > .main {
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container > .main {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .ts {
+    flex-direction: column-reverse;
+  }
+}
